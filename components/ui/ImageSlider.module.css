@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.arrows {
+  display: flex;
+  cursor: pointer;
+}
+.arrow {
+  margin-right: 2rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}

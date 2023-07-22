@@ -1,0 +1,66 @@
+.rightHalf::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 55vw;
+  height: 100vh;
+  background-color: var(--white-color);
+
+  transform: skewX(35deg);
+}
+
+.rightHalf::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 55vw;
+  height: 100vh;
+  background-color: var(--white-color);
+}
+
+.leftHalf {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 20vw;
+  height: 100vh;
+  background-color: var(--green-color);
+}
+.leftHalf::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 45vw;
+  height: 100vh;
+  background-color: var(--green-color);
+  transform: skewX(15deg);
+}
+.content {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 4rem;
+  max-width: 750px;
+  height: 77vh;
+}
+.content p {
+  max-width: 750px;
+  margin-top: 2rem;
+  line-height: 2;
+}
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}

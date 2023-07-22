@@ -1,0 +1,63 @@
+.container {
+  color: black;
+  margin: 4rem 4rem 0;
+}
+.container h5 {
+  border-top: 1px solid black;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  font-size: 24px;
+  margin-right: 0.2rem;
+}
+.iconLike {
+  font-size: 18px;
+  margin-left: 0.2rem;
+}
+.sections span {
+  display: flex;
+  align-items: center;
+}
+.right {
+  width: 750px;
+}
+.right h1 {
+  margin-bottom: 1rem;
+}
+.left {
+  margin-right: 4rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+.form textarea {
+  background-color: var(--white-color);
+  color: black;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.461);
+  border-radius: 3px;
+  padding: 0.6rem;
+}
+.button {
+  height: 30px;
+  width: 80px;
+  background-color: var(--secondary-color-dark);
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.form textarea {
+  height: 120px;
+}

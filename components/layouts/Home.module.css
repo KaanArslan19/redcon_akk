@@ -1,0 +1,48 @@
+.container {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.rightHalf::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 55vw;
+  height: 100vh;
+  background-color: #fff2ee;
+  transform: skewX(35deg);
+}
+
+.rightHalf::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 55vw;
+  height: 100vh;
+  background-color: #fff2ee;
+}
+
+.leftHalf {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 20vw;
+  height: 100vh;
+  background-color: #ffcaae;
+}
+.leftHalf::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 45vw;
+  height: 100vh;
+  background-color: #ffcaae;
+  transform: skewX(15deg);
+}

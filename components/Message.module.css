@@ -1,0 +1,28 @@
+.container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 78vh;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 750px;
+}
+.top p {
+  line-height: 2;
+  margin: 1rem 0 1rem;
+}
+.top h1 {
+  font-style: italic;
+  font-size: 54px;
+  font-weight: 400;
+}
+
+.motif {
+  width: 100%;
+  height: 75px;
+}
