@@ -72,7 +72,7 @@ const Navbar = () => {
       ) : (
         <ul className={classes.linkContainer}>
           {Navbar_Items.map((item) => (
-            <li>
+            <li key={item.id}>
               <Link
                 href={item.url}
                 className={`${classes.button} ${

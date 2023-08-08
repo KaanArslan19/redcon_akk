@@ -10,7 +10,7 @@ const BookList = ({ books }) => {
       bg: index % 2 === 0 ? book.bg : true,
     }));
     setBookList(updatedBookList);
-  }, []);
+  }, [bookList]);
   return (
     <Fragment>
       <div className={classes.listContainer}>
