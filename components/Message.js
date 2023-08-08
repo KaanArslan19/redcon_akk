@@ -1,34 +1,49 @@
 import Image from "next/image";
 import classes from "./Message.module.css";
+import { useMediaQuery } from "react-responsive";
 
 const Message = () => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
   return (
     <div className={classes.container}>
-      <div className={classes.top}>
-        <h1>Sevgili Okuryazarlar</h1>
+      <div className={isMobile ? classes.topMobile : classes.top}>
+        <h1>Tarih, Bir Milletin Geçmişi ile Geleceği Arasındaki Köprüdür</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Kentleri kent yapan, geçmişten bugüne taşıdığı değerlerle oluşan
+          kimlikleridir. Coğrafyamızda günümüze ulaşan her şey, bize geleceğe
+          taşımamız için emanet edilen geçmişin mirasıdır. Bu kültürün kâinatta
+          bıraktığı ayak izlerini korumak, anlamak ve geleceğe taşımak da bizim
+          omuzlarımızdaki yüce bir sorumluluk ve görevdir.
+          <br />
+          <br /> Aliağa ve çevresinin 8.500 yıllık uygarlık yolculuğuna dair tüm
+          kültürel birikimi bulmak, kayıt altına almak ve geleceğe taşımak!
+          İşte, Kent Belleği araştırmalarımız ve Aliağa Kent Kitaplığı
+          yayınlarımızla bu tarihsel görev ve sorumluluğu yerine getirmeye
+          çalışıyoruz.
+          <br />
+          <br />
+          Biliyoruz ki Tarih, bir milletin geçmişi ile geleceği arasında
+          köprüdür. Aliağa’nın geçmişten bugüne kültür birikimini geleceğe
+          taşımak için bir meşale olan Aliağa Kent Kitaplığı, bu kültürel
+          köprüyü kuran çok değerli eserleri kültür dünyamıza kazandırıyor.
+          <br />
+          <br />
+          Eserlerimizin tüm okuyucularımıza yararlı olmasını diliyorum. <br />
+          <br />
+          Sevgi ve Saygılarımla…
         </p>
         <Image
-          src="/images/abb_sign.png"
-          width={80}
-          height={50}
+          src="/images/logos/abb_sign.png"
+          width={isMobile ? 128 : 182}
+          height={isMobile ? 28 : 40}
           alt="abb-logo"
         />
       </div>
-      <Image
-        src="/images/motif.jpg"
-        className={classes.motif}
-        width={80}
-        height={50}
-        alt="motif"
-      />
+      <div className={classes.motifContainer}>
+        <div className={classes.motif}></div>
+      </div>
     </div>
   );
 };

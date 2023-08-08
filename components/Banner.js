@@ -1,26 +1,20 @@
-import Image from "next/image";
 import classes from "./Banner.module.css";
 import ImageSlider from "./ui/ImageSlider";
 
-const DUMMY_BOOK_DATA = [
-  {
-    id: "b1",
-    title: "Helvacı",
-    description: "description text",
-    image: "/images/book1.png",
-  },
-  {
-    id: "b2",
-    title: "Kuş Cenneti",
-    description: "description text",
-    image: "/images/book2.png",
-  },
-];
-const Banner = () => {
+import { useMediaQuery } from "react-responsive";
+
+const Banner = ({ index, slides }) => {
+  const indexChangeHandler = (currentIndex) => {
+    index(currentIndex);
+  };
+  const isMobile = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+
   return (
-    <div className={classes.container}>
+    <div className={isMobile ? classes.mobileContainer : classes.container}>
       <div className={classes.top}>
-        <ImageSlider slides={DUMMY_BOOK_DATA} />
+        <ImageSlider slideIndex={indexChangeHandler} slides={slides} />
       </div>
       <div className={classes.bottom}></div>
     </div>

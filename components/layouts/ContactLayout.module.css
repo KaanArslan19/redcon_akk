@@ -1,43 +1,48 @@
-.rightHalf::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  top: 0;
-  width: 55vw;
-  height: 100vh;
-  background-color: #fff2ee;
-  transform: skewX(35deg);
+.container {
+  width: 100vw;
 }
-
-.rightHalf::after {
-  content: "";
+.rightHalf {
   position: absolute;
-  z-index: -1;
   right: 0;
   top: 0;
-  width: 55vw;
+  z-index: -1;
+  border-top: 100vh solid #fff;
+  border-left: 30vw solid var(--secondary-color-dark);
+
+  width: 58vw;
   height: 100vh;
-  background-color: #fff2ee;
 }
 
 .leftHalf {
   position: absolute;
-  z-index: -1;
   left: 0;
   top: 0;
-  width: 20vw;
-  height: 100vh;
+  z-index: -1;
   background-color: var(--secondary-color-dark);
+
+  width: 42vw;
+  height: 100vh;
 }
-.leftHalf::before {
-  content: "";
+
+.topHalf {
   position: absolute;
-  z-index: -1;
-  left: 0;
+  right: 0;
   top: 0;
-  width: 45vw;
-  height: 100vh;
+  z-index: -1;
+  border-left: 100vh solid var(--secondary-color-dark);
+  border-bottom: 20vw solid #fff;
   background-color: var(--secondary-color-dark);
-  transform: skewX(15deg);
+  width: 100%;
+  height: 510px;
+}
+
+.bottomHalf {
+  position: absolute;
+  left: 0;
+  top: 510px;
+  z-index: -1;
+
+  width: 100vw;
+  height: 320px;
+  background-color: #fff;
 }

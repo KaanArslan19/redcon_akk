@@ -3,6 +3,23 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--secondary-color-dark);
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-top: 1rem;
+}
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spreader {
+  border: 1px solid var(--black-dark);
+  height: 40px;
+  margin: 0 1rem 0;
 }

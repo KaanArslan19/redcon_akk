@@ -1,0 +1,52 @@
+.container {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.rightHalf {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #fff;
+
+  width: 50vw;
+  height: 100vh;
+}
+
+.leftHalf {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-image: url("/images/about_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.topHalf {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-image: url("/images/about_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 450px;
+}
+
+.bottomHalf {
+  position: absolute;
+  left: 0;
+  top: 450px;
+  z-index: -1;
+  background-color: #fff;
+  width: 100vw;
+  height: 450px;
+}

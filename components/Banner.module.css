@@ -1,4 +1,7 @@
 .container {
-  color: black;
+  color: var(--black-dark);
   margin-left: 4rem;
+}
+.mobileContainer {
+  color: var(--black-dark);
 }

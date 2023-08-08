@@ -1,13 +1,16 @@
 import Image from "next/image";
 import classes from "./Navbar.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
-import { TbMenu } from "react-icons/tb";
 import { AiOutlineClose } from "react-icons/ai";
+import { BiMenu } from "react-icons/bi";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const router = useRouter();
+  const currentRoute = router.pathname;
   const Navbar_Items = [
     { id: "n1", title: "AnaSayfa", url: "/" },
     { id: "n2", title: "Aliağa Çocuk", url: "/kids" },
@@ -16,27 +19,22 @@ const Navbar = () => {
     { id: "n5", title: "Hakkimizda", url: "/about" },
     { id: "n6", title: "İletişim", url: "/contact" },
   ];
+
   const isMobile = useMediaQuery({
-    query: "(max-width: 768px)",
+    query: "(max-width: 862px)",
   });
-  useEffect(() => {
-    const btnElList = document.querySelectorAll(".button");
-
-    btnElList.forEach((btnEl) => {
-      btnEl.addEventListener("click", () => {
-        document.querySelector(".active")?.classList.remove("active");
-        btnEl.classList.add("active");
-      });
-    });
-  }, []);
-
   return (
-    <div className={classes.container}>
-      <Image src="/images/logo.png" width={150} height={150} alt="logo" />
+    <div className={isMobile ? classes.mobileContainer : classes.container}>
+      <Image
+        src="/images/logos/akk_logo.png"
+        width={isMobile ? 65 : 105}
+        height={isMobile ? 64 : 104}
+        alt="logo"
+      />
       {isMobile ? (
         <>
           {!toggle ? (
-            <TbMenu
+            <BiMenu
               onClick={() => {
                 setToggle(true);
               }}
@@ -44,20 +42,25 @@ const Navbar = () => {
             />
           ) : (
             <div className={classes.mobileNav}>
-              <AiOutlineClose
-                className={classes.icon}
-                onClick={() => {
-                  setToggle(false);
-                }}
-              />
+              <div className={classes.mobileNavTop}>
+                <Image
+                  src="/images/logos/akk_logo.png"
+                  width={65}
+                  height={64}
+                  alt="logo"
+                />
+                <AiOutlineClose
+                  className={classes.icon}
+                  onClick={() => {
+                    setToggle(false);
+                  }}
+                />
+              </div>
+
               <ul className={classes.listItems}>
                 {Navbar_Items.map((item) => (
-                  <li>
-                    <Link
-                      key={item.id}
-                      href={item.url}
-                      className={classes.button}
-                    >
+                  <li key={item.id}>
+                    <Link href={item.url} className={classes.button}>
                       {item.title}
                     </Link>
                   </li>
@@ -70,7 +73,12 @@ const Navbar = () => {
         <ul className={classes.linkContainer}>
           {Navbar_Items.map((item) => (
             <li>
-              <Link href={item.url} className={classes.button}>
+              <Link
+                href={item.url}
+                className={`${classes.button} ${
+                  currentRoute === item.url ? classes.active : ""
+                }`}
+              >
                 {item.title}
               </Link>
             </li>

@@ -1,3 +1,63 @@
 .container {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.rightHalf {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-color: #fff;
+
+  width: 50vw;
   height: 100vh;
+}
+
+.leftHalf {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-bottom: 100vh solid var(--white-color);
+  border-right: 20vw solid var(--white-color);
+  width: 52vw;
+  height: 100vh;
+  z-index: -2;
+}
+.leftHalf::after {
+  position: absolute;
+  content: "";
+  z-index: -3;
+
+  background-image: url("/images/kido_bg.png");
+  width: 50vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.topHalf {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-image: url("/images/kido_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 100vw;
+  height: 360px;
+}
+
+.bottomHalf {
+  position: absolute;
+  left: 0;
+  top: 360px;
+  z-index: -1;
+  background-color: #fff;
+  width: 100vw;
+  height: 450px;
 }

@@ -1,11 +1,12 @@
 :root {
-  --primary-color-dark: #ffcaae;
-  --primary-color-light: #fff3ec;
-  --secondary-color-dark: #a5e6dd;
-  --secondary-color-light: #eaf0e9;
+  --primary-color-dark: #f4c1a3;
+  --primary-color-light: #feeae0;
+  --secondary-color-dark: #95e2d4;
+  --secondary-color-light: #dee8e0;
   --gray-color: #eeeeee;
   --green-color: #97bd70;
-  --white-color: #fefefe;
+  --white-color: #e4e7ec;
+  --black-dark: #303437;
 }
 
 * {
@@ -57,4 +58,19 @@ li {
   html {
     color-scheme: dark;
   }
+}
+
+@font-face {
+  font-family: "Jeko-Regular";
+  src: local("Jeko-Regular"), url("/fonts/Jeko-Regular.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Jeko-ExtraBold";
+  src: local("Jeko-ExtraBold"), url("/fonts/Jeko-ExtraBold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Roxborough-CF";
+  src: local("Roxborough-CF"), url("/fonts/Roxborough-CF.ttf") format("woff");
 }

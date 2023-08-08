@@ -7,19 +7,9 @@ import { useEffect } from "react";
 const BookItem = (props) => {
   const router = useRouter();
   const showDetailsHandler = () => {
-    router.push("/books/bookdetails" + props.id);
+    router.push("/books/bookdetails/" + props.id);
   };
-  /*   useEffect(() => {
-    const styleSheet = document.styleSheets[0];
 
-    if (props.bg) {
-      const ruleIndex = styleSheet.insertRule(
-        "#content-box::after { background-color: var(--secondary-color-dark); }",
-        styleSheet.cssRules.length
-      );
-    }
-  }, [props.bg]); */
-  console.log(props.bg);
   return (
     <li className={classes.container} onClick={showDetailsHandler}>
       <Card>

@@ -7,7 +7,7 @@ const BookList = ({ books }) => {
   useEffect(() => {
     const updatedBookList = bookList.map((book, index) => ({
       ...book,
-      bg: index % 2 === 0 ? true : book.bg,
+      bg: index % 2 === 0 ? book.bg : true,
     }));
     setBookList(updatedBookList);
   }, []);

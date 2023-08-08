@@ -1,28 +1,73 @@
 .container {
-  color: black;
+  color: var(--black-dark);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 78vh;
 }
 .top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 750px;
+  max-width: 856px;
+  margin: 1.5rem;
 }
 .top p {
-  line-height: 2;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 26px;
+  letter-spacing: -0.16px;
+  font-family: "Roxborough-CF";
+
   margin: 1rem 0 1rem;
 }
 .top h1 {
+  color: var(--black-dark);
+  text-align: center;
+  font-family: "Roxborough-CF";
+  font-size: 24px;
   font-style: italic;
-  font-size: 54px;
+  font-weight: 800;
+  line-height: 32px;
+}
+.topMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 856px;
+  margin: 1.5rem;
+}
+
+.topMobile p {
+  font-family: "Adagio_Slab-Regular_italic";
+  font-size: 12px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.12px;
+
+  margin: 1rem 0 1rem;
+}
+.topMobile h1 {
+  font-family: Roxborough CF;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 28px;
+}
+.motifContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
 }
 
 .motif {
   width: 100%;
-  height: 75px;
+  height: 120px;
+  background-size: cover;
+
+  background-position-x: right 0.2rem;
+  background-image: url("/images/motif_logo.png");
 }

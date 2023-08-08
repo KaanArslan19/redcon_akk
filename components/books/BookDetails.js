@@ -18,17 +18,47 @@ const BookDetails = () => {
         <h1>Ozet</h1>
         <p>Dynamic Summary</p>
         <div className={classes.bottomMiddle}>
-          <div>
-            <h5>Yazar</h5>
+          <div className={classes.bottomMiddleInner}>
+            <div className={classes.innerContent}>
+              <h5>Yazar</h5>
+              <span>Dynamic Author</span>
+            </div>
+            <div>
+              <h5>Yayın Koordinasyon</h5>
+              <span>Dynamic Value</span>
+            </div>
+          </div>
+
+          <Link href="" className={classes.button}>
+            Görüntüleme Linkini Kopyala
+            <TiAttachment className={classes.iconShare} />
+          </Link>
+        </div>
+        <div className={classes.bottomLast}>
+          <div className={classes.innerContent}>
+            <h5>Sayfa Sayisi</h5>
             <span>Dynamic Author</span>
           </div>
-          <div>
-            <h5>Yayın Koordinasyon</h5>
-            <span>Dynamic Value</span>
+          <div className={classes.innerContent}>
+            <h5>Yayin Tarihi</h5>
+            <span>Dynamic Author</span>
           </div>
-          <Link href="" className={classes.button}>
-            Görüntüleme Linkini Kopyala <TiAttachment />
-          </Link>
+          <div className={classes.innerContent}>
+            <h5>ISBN/ISSN No</h5>
+            <span>Dynamic Author</span>
+          </div>
+          <div className={classes.innerContent}>
+            <h5>Yayin Sahibi</h5>
+            <span>Dynamic Author</span>
+          </div>
+          <div className={classes.innerContent}>
+            <h5>Basim Yeri</h5>
+            <span>Dynamic Author</span>
+          </div>
+          <div className={classes.innerContent}>
+            <h5>Grafik Tasarim ve Uygulama</h5>
+            <span>Dynamic Author</span>
+          </div>
         </div>
       </div>
     </div>

@@ -1,13 +1,109 @@
 .container {
   display: flex;
   justify-content: space-between;
+  height: 77vh;
+}
+.mobileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom {
+  display: flex;
+}
+.left h1 {
+  margin-top: 8rem;
+  font-size: 56px;
 }
 .arrows {
   display: flex;
+  justify-content: flex-end;
   cursor: pointer;
+  margin-right: 4rem;
 }
 .arrow {
-  margin-right: 2rem;
+  border: 1px solid var(--black-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.arrowMobile {
+  border: 1px solid var(--black-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.arrowFw {
+  margin-left: 0.4rem;
+}
+.button {
   border: 1px solid black;
-  border-radius: 50%;
+  width: 150px;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 40px;
+}
+.buttonAdjust {
+  margin-top: 1rem;
+}
+
+.buttonMobile {
+  border: 1px solid black;
+  width: 112px;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 12px;
+  height: 32px;
+}
+
+.mobileTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileBottom {
+  margin: 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobileContent {
+  margin: 1rem 0 1rem;
+}
+.mobileContentBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrowsMobile {
+  display: flex;
+}
+.image {
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
