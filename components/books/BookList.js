@@ -4,13 +4,14 @@ import BookItem from "./BookItem";
 
 const BookList = ({ books }) => {
   const [bookList, setBookList] = useState(books);
+  console.log(bookList);
   useEffect(() => {
     const updatedBookList = bookList.map((book, index) => ({
       ...book,
       bg: index % 2 === 0 ? book.bg : true,
     }));
     setBookList(updatedBookList);
-  }, [bookList]);
+  }, [books]);
   return (
     <Fragment>
       <div className={classes.listContainer}>

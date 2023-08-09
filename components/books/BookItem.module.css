@@ -1,18 +1,64 @@
 .container {
-  padding: 1rem 0.5rem;
+  color: var(--black-dark);
+
+  padding: 1rem 12px 1rem;
   position: relative;
 }
 
+.container h4 {
+  margin-top: 1.2rem;
+  font-family: "Jeko-ExtraBold";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.container p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: var(--black-dark, #303437);
+  font-family: Aftika-Light;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  text-transform: uppercase;
+}
+.containerMobile {
+  color: var(--black-dark);
+
+  padding: 1rem 12px 1rem;
+  position: relative;
+}
+.containerMobile h4 {
+  margin-left: 12px;
+  margin-right: 12px;
+  font-family: Jeko-ExtraBold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.containerMobile p {
+  margin-left: 12px;
+  margin-right: 12px;
+  font-family: Aftika-Light;
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+
 .imgBox {
-  padding: 1rem 0.5rem;
   background-color: var(--secondary-color-light);
 }
 .differentBg {
-  padding: 1rem 0.5rem;
   background-color: var(--primary-color-light);
 }
 .contentPrimary {
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +79,6 @@
   transition: 0.5s;
 }
 .contentSecondary {
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,11 +97,4 @@
   background-color: var(--secondary-color-dark);
   transform: skewY(2.5deg);
   transition: 0.5s;
-}
-.container h4 {
-  margin-top: 1.2rem;
-  margin-left: 1rem;
-}
-.container p {
-  margin-left: 1rem;
 }

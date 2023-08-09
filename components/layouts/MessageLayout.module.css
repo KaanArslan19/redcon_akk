@@ -1,4 +1,6 @@
 .container {
   background-color: var(--primary-color-dark);
+}
+.heightAdj {
   height: 100vh;
 }

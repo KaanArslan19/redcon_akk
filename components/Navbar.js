@@ -12,7 +12,7 @@ const Navbar = () => {
   const router = useRouter();
   const currentRoute = router.pathname;
   const Navbar_Items = [
-    { id: "n1", title: "AnaSayfa", url: "/" },
+    { id: "n1", title: "Ana Sayfa", url: "/" },
     { id: "n2", title: "Aliağa Çocuk", url: "/kids" },
     { id: "n3", title: "Kitaplarimiz", url: "/books" },
     { id: "n4", title: "Başkan Mesaji", url: "/message" },
@@ -23,6 +23,9 @@ const Navbar = () => {
   const isMobile = useMediaQuery({
     query: "(max-width: 862px)",
   });
+  const logoClickHandler = () => {
+    router.push("/");
+  };
   return (
     <div className={isMobile ? classes.mobileContainer : classes.container}>
       <Image
@@ -30,6 +33,8 @@ const Navbar = () => {
         width={isMobile ? 65 : 105}
         height={isMobile ? 64 : 104}
         alt="logo"
+        onClick={logoClickHandler}
+        className={classes.logo}
       />
       {isMobile ? (
         <>
@@ -48,6 +53,8 @@ const Navbar = () => {
                   width={65}
                   height={64}
                   alt="logo"
+                  onClick={logoClickHandler}
+                  className={classes.logo}
                 />
                 <AiOutlineClose
                   className={classes.icon}

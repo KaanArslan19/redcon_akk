@@ -75,3 +75,6 @@
   background-color: var(--primary-color-dark);
   padding: 1.5rem;
 }
+.logo {
+  cursor: pointer;
+}

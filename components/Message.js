@@ -6,6 +6,9 @@ const Message = () => {
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)",
   });
+  const isTab = useMediaQuery({
+    query: "(max-width: 1440px)",
+  });
   return (
     <div className={classes.container}>
       <div className={isMobile ? classes.topMobile : classes.top}>
@@ -41,8 +44,12 @@ const Message = () => {
           alt="abb-logo"
         />
       </div>
-      <div className={classes.motifContainer}>
-        <div className={classes.motif}></div>
+      <div
+        className={
+          isMobile ? classes.motifContainerMobile : classes.motifContainer
+        }
+      >
+        <div className={isTab ? classes.motifTab : classes.motif}></div>
       </div>
     </div>
   );

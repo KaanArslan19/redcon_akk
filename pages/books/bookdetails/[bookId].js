@@ -1,14 +1,11 @@
-import BookList from "@/components/books/BookList";
 import BookDetailsLayout from "@/components/layouts/BookDetailsLayout";
-import { Book_List } from "@/lib/constantBookData";
-import { useRouter } from "next/router";
+
 import fs from "fs/promises";
 const BookDetailsPage = (props) => {
-  const router = useRouter();
   return (
     <div>
       <BookDetailsLayout
-        description={props.bookData.description}
+        summary={props.bookData.summary}
         writer={props.bookData.writer}
         coordinator={props.bookData.coordinator}
         totalPage={props.bookData.totalPage}
@@ -16,6 +13,7 @@ const BookDetailsPage = (props) => {
         paperOwner={props.bookData.paperOwner}
         place={props.bookData.place}
         graphicDesign={props.bookData.graphicDesign}
+        isbnNumber={props.bookData.isbnNumber}
       />
     </div>
   );
@@ -44,13 +42,12 @@ export async function getStaticProps({ params }) {
   const rawData = await fs.readFile(filePath, "utf8");
   const data = JSON.parse(rawData);
   const filteredBook = data.find((item) => item.id === bookId);
-  console.log("Found Item:", filteredBook);
 
   return {
     props: {
       bookData: {
         id: filteredBook.id,
-        description: filteredBook.description,
+        summary: filteredBook.summary,
         writer: filteredBook.writer,
         coordinator: filteredBook.coordinator,
         totalPage: filteredBook.totalPage,
@@ -58,6 +55,7 @@ export async function getStaticProps({ params }) {
         isbnNumber: filteredBook.isbnNumber,
         paperOwner: filteredBook.paperOwner,
         place: filteredBook.place,
+        isbnNumber: filteredBook.isbnNumber,
         graphicDesign: filteredBook.graphicDesign,
       },
     },

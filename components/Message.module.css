@@ -37,6 +37,7 @@
   align-items: center;
   max-width: 856px;
   margin: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .topMobile p {
@@ -62,12 +63,25 @@
   right: 0;
   width: 100vw;
 }
+.motifContainerMobile {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+}
 
 .motif {
   width: 100%;
   height: 120px;
+  background-size: contain;
+  background-repeat: repeat-x;
+
+  background-image: url("/images/motif_logo.png");
+}
+.motifTab {
+  width: 100%;
+  height: 120px;
   background-size: cover;
 
-  background-position-x: right 0.2rem;
   background-image: url("/images/motif_logo.png");
 }
