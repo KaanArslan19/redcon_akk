@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const BookItem = (props) => {
   const isMobile = useMediaQuery({
-    query: "(max-width: 862px)",
+    query: "(max-width: 768px)",
   });
 
   return (

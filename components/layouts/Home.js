@@ -18,7 +18,7 @@ const Home = () => {
     query: "(max-width: 768px)",
   });
   return (
-    <div className={classes.container}>
+    <div className={isMobile ? classes.mobileContainer : classes.container}>
       {isMobile ? (
         <>
           <div

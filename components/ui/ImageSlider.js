@@ -29,8 +29,8 @@ const ImageSlider = ({ slides, slideIndex }) => {
           <div className={classes.mobileTop}>
             <Image
               src={slides[currentIndex].image}
-              width={372}
-              height={340}
+              width={360}
+              height={330}
               alt={slides[currentIndex].title}
             />
           </div>
@@ -94,8 +94,8 @@ const ImageSlider = ({ slides, slideIndex }) => {
           <div className={classes.right}>
             <Image
               src={slides[currentIndex].image}
-              width={750}
-              height={687}
+              width={800}
+              height={734}
               alt={slides[currentIndex].title}
               className={classes.image}
             />
