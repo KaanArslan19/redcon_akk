@@ -13,19 +13,20 @@
   margin: 1.5rem;
 }
 .top p {
-  font-size: 16px;
-  font-weight: 400;
+  color: var(--black-dark);
   text-align: center;
+  font-family: "Adagio_Slab-Regular_italic", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 26px;
   letter-spacing: -0.16px;
-  font-family: "Roxborough-CF";
-
   margin: 1rem 0 1rem;
 }
 .top h1 {
   color: var(--black-dark);
   text-align: center;
-  font-family: "Roxborough-CF";
+  font-family: "Roxborough-CF", sans-serif;
   font-size: 24px;
   font-style: italic;
   font-weight: 800;
@@ -41,7 +42,7 @@
 }
 
 .topMobile p {
-  font-family: "Adagio_Slab-Regular_italic";
+  font-family: "Adagio_Slab-Regular_italic", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -51,7 +52,7 @@
   margin: 1rem 0 1rem;
 }
 .topMobile h1 {
-  font-family: Roxborough CF;
+  font-family: "Roxborough-CF", sans-serif;
   font-size: 20px;
   font-style: italic;
   font-weight: 800;

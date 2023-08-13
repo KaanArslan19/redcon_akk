@@ -57,11 +57,11 @@ const BookDetails = ({
                 className={classes.mobileHeader}
                 onClick={summaryClickHandler}
               >
-                <h1>Ozet</h1>
+                <h1>Özet</h1>
                 <BiChevronDown className={classes.arrowDownIcon} />
               </div>
             ) : (
-              <h1>Ozet</h1>
+              <h1>Özet</h1>
             )}
 
             <p className={!showSummary && isMobile && classes.restrictSummary}>
@@ -152,10 +152,10 @@ const BookDetails = ({
                     <span>{coordinator}</span>
                   </div>
                 </div>
-                <Link href="" className={classes.button}>
+                <button className={classes.button}>
                   Görüntüleme Linkini Kopyala
                   <TiAttachment className={classes.iconShare} />
-                </Link>
+                </button>
               </div>
               <div className={classes.bottomLast}>
                 <div className={classes.innerContent}>

@@ -59,18 +59,47 @@ li {
     color-scheme: dark;
   }
 }
-
+/* JEKO FONT FAMILY*/
 @font-face {
   font-family: "Jeko-Regular";
-  src: local("Jeko-Regular"), url("/fonts/Jeko-Regular.ttf") format("woff");
+  src: url("/fonts/Jeko/Jeko-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Jeko-Black-Italic";
+  src: url("/fonts/Jeko/Jeko-Black-Italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Jeko-ExtraBold";
-  src: local("Jeko-ExtraBold"), url("/fonts/Jeko-ExtraBold.ttf") format("woff");
+  src: url("/fonts/Jeko/Jeko-Extra-Bold.ttf") format("truetype");
+}
+
+/* JEKO FONT FAMILY*/
+
+/* AFTIKA FONT FAMILY*/
+@font-face {
+  font-family: "Aftika-SemiBold";
+  src: url("/fonts/Aftika/Aftika-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
+  font-family: "Aftika-Light";
+  src: url("/fonts/Aftika/Aftika-Light.ttf") format("truetype");
+}
+
+/* AFTIKA FONT FAMILY*/
+
+/* Roxborough FONT FAMILY*/
+
+@font-face {
   font-family: "Roxborough-CF";
-  src: local("Roxborough-CF"), url("/fonts/Roxborough-CF.ttf") format("woff");
+  src: url("/fonts/RoxboroughCF/RoxboroughCF-Regular.ttf") format("truetype");
+}
+
+/* Roxborough FONT FAMILY*/
+
+@font-face {
+  font-family: "Adagio_Slab-Regular_italic";
+  src: url("/fonts/Adagio/Adagio_Slab-Regular_italic.ttf") format("truetype");
 }

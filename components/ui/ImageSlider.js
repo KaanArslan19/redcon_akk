@@ -23,9 +23,9 @@ const ImageSlider = ({ slides, slideIndex }) => {
     slideIndex(currentIndex);
   };
   return (
-    <div className={isMobile ? classes.mobileContainer : classes.container}>
+    <>
       {isMobile ? (
-        <>
+        <div className={classes.mobileContainer}>
           <div className={classes.mobileTop}>
             <Image
               src={slides[currentIndex].image}
@@ -49,6 +49,7 @@ const ImageSlider = ({ slides, slideIndex }) => {
             <div>
               <div className={classes.mobileContent}>
                 <h1>{slides[currentIndex].title}</h1>
+                <span>{slides[currentIndex].description}</span>
               </div>
 
               <div className={classes.mobileContentBottom}>
@@ -67,12 +68,13 @@ const ImageSlider = ({ slides, slideIndex }) => {
               </div>
             </div>
           </div>
-        </>
+        </div>
       ) : (
-        <>
-          <div className={classes.left}>
-            <div>
+        <div className={classes.container}>
+          <div className={classes.top}>
+            <div className={classes.topLeft}>
               <h1>{slides[currentIndex].title}</h1>
+              <span>{slides[currentIndex].description}</span>
               <Link
                 href={`/books/bookdetails/${slides[currentIndex].id}`}
                 className={
@@ -82,22 +84,22 @@ const ImageSlider = ({ slides, slideIndex }) => {
                 Kitabi Incele
               </Link>
             </div>
-
+            <div className={classes.topRight}>
+              <Image
+                src={slides[currentIndex].image}
+                width={800}
+                height={734}
+                alt={slides[currentIndex].title}
+                className={classes.image}
+              />
+            </div>
+          </div>
+          <div className={classes.bottom}>
             <Image
               src="/images/logos/ab_logo.png"
               width={123}
               height={40}
               alt="aab-logo"
-            />
-          </div>
-
-          <div className={classes.right}>
-            <Image
-              src={slides[currentIndex].image}
-              width={800}
-              height={734}
-              alt={slides[currentIndex].title}
-              className={classes.image}
             />
             <div className={classes.arrows}>
               <div onClick={goToPrevious} className={classes.arrow}>
@@ -111,9 +113,9 @@ const ImageSlider = ({ slides, slideIndex }) => {
               </div>
             </div>
           </div>
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 

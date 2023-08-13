@@ -1,6 +1,7 @@
 .container {
   display: flex;
   justify-content: space-between;
+  color: var(--black-dark);
 }
 .title {
   font-size: 28px;
@@ -10,26 +11,53 @@
 }
 
 .content {
-  color: var(--black-dark);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-right: 4rem;
+}
+.contentMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 4rem;
+}
+
+.contentMobile p {
+  color: var(--black-dark);
+
+  font-family: "Jeko-Regular", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.contentMobile h3 {
+  color: var(--black-dark);
+  font-family: "Jeko-ExtraBold", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
 }
 .sizeAdj {
   max-width: 621px;
 }
 
 .content p {
+  color: var(--black-dark);
+
   font-size: 16px;
   font-style: normal;
-  font-family: "Jeko-Regular";
+  font-family: "Jeko-Regular", sans-serif;
   font-weight: 400;
   line-height: 26px;
 }
 .content h3 {
+  color: var(--black-dark);
+
   font-size: 28px;
-  font-family: "Jeko-ExtraBold";
+  font-family: "Jeko-ExtraBold", sans-serif;
 
   font-style: normal;
   font-weight: 400;

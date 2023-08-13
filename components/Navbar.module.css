@@ -4,6 +4,7 @@
   align-items: center;
   padding: 1rem;
   background-color: transparent;
+  color: var(--black-dark);
 }
 .container img {
   margin-left: 4rem;
@@ -23,19 +24,25 @@
   background-color: transparent;
   cursor: pointer;
   display: flex;
-  color: black;
+
   align-items: center;
   padding: 0 1rem 0.2rem;
   border: none;
+  color: var(--black-dark);
+  font-family: "Aftika-SemiBold", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
 }
 
 .icon {
   font-size: 24px;
   cursor: pointer;
-  color: black;
+  color: var(--black-dark);
 }
 .active {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black-dark);
 }
 
 .mobileNav {

@@ -14,9 +14,9 @@ const Navbar = () => {
   const Navbar_Items = [
     { id: "n1", title: "Ana Sayfa", url: "/" },
     { id: "n2", title: "Aliağa Çocuk", url: "/kids" },
-    { id: "n3", title: "Kitaplarimiz", url: "/books" },
+    { id: "n3", title: "Kitaplarımız", url: "/books" },
     { id: "n4", title: "Başkan Mesaji", url: "/message" },
-    { id: "n5", title: "Hakkimizda", url: "/about" },
+    { id: "n5", title: "Hakkımızda", url: "/about" },
     { id: "n6", title: "İletişim", url: "/contact" },
   ];
 

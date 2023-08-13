@@ -12,7 +12,7 @@ const Kids = () => {
       <div
         className={
           isMobile
-            ? [classes.content + " " + classes.bg]
+            ? [classes.contentMobile + " " + classes.bg]
             : [classes.content + " " + classes.sizeAdj]
         }
       >

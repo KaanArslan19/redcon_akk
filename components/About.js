@@ -17,7 +17,10 @@ const About = () => {
           }
         >
           <div>
-            <h1>Aliağa’nın Kültür Belleği: Aliağa Kent Kitaplığı</h1>
+            <h1>
+              Aliağa’nın Kültür Belleği: {isMobile && <br />} Aliağa Kent
+              Kitaplığı
+            </h1>
             <p>
               Günümüzde İzmir’in Aliağa ilçesinin bulunduğu bölgenin insanlık
               tarihi açısından 8.500 yıllık bir geçmişi bulunmaktadır. Aliağa
