@@ -12,7 +12,8 @@
     "isbnNumber": "978-975-8160-09-9",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Dinç Ofset Matbaa",
-    "graphicDesign": "Redcon | Concept Design"
+    "graphicDesign": "Redcon | Concept Design",
+    "bg": false
   },
   {
     "id": "b2",
@@ -27,7 +28,8 @@
     "isbnNumber": "978-975-8160-08-2",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Dinç Ofset Matbaa",
-    "graphicDesign": "Redcon | Concept Design"
+    "graphicDesign": "Redcon | Concept Design",
+    "bg": false
   },
   {
     "id": "b3",
@@ -42,7 +44,8 @@
     "isbnNumber": "978-975-8160-07-5",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Dinç Ofset Matbaa",
-    "graphicDesign": "Güven Toros"
+    "graphicDesign": "Güven Toros",
+    "bg": false
   },
   {
     "id": "b4",
@@ -57,7 +60,8 @@
     "isbnNumber": "978-975-8160-06-8",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Dinç Ofset Matbaa",
-    "graphicDesign": "Redcon | Concept Design"
+    "graphicDesign": "Redcon | Concept Design",
+    "bg": false
   },
   {
     "id": "b5",
@@ -72,7 +76,8 @@
     "isbnNumber": "978-975-8160-05-1",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Dinç Ofset Matbaa",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b6",
@@ -87,7 +92,8 @@
     "isbnNumber": "978-975-8160-04-4",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Dinç Ofset Matbaa",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b7",
@@ -102,7 +108,8 @@
     "isbnNumber": "978-975-8160-03-7",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Dinç Ofset Matbaa",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b8",
@@ -117,7 +124,8 @@
     "isbnNumber": "978-975-8160-02-0",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Dinç Ofset Matbaa",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b9",
@@ -132,7 +140,8 @@
     "isbnNumber": "978-975-8160-01-3",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Dinç Ofset Matbaa",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
 
   {
@@ -148,7 +157,8 @@
     "isbnNumber": "978-605-68267-4-0",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b11",
@@ -163,7 +173,8 @@
     "isbnNumber": "978-605-69041-1-0",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b12",
@@ -178,7 +189,8 @@
     "isbnNumber": "978-605-68267-7-1",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b13",
@@ -193,7 +205,8 @@
     "isbnNumber": "978-605-68267-6-4",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b14",
@@ -208,7 +221,8 @@
     "isbnNumber": "978-605-68267-5-7",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b15",
@@ -223,7 +237,8 @@
     "isbnNumber": "978-975-97975-3-9(T.K) 978-605-68267-2-6",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
 
   {
@@ -239,7 +254,8 @@
     "isbnNumber": "978-605-68267-0-2",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b17",
@@ -254,7 +270,8 @@
     "isbnNumber": "978-975-97975-6-0",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b18",
@@ -269,7 +286,8 @@
     "isbnNumber": "978-975-97975-5-3",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b19",
@@ -284,7 +302,8 @@
     "isbnNumber": "978-975-979975-9-1",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   },
   {
     "id": "b20",
@@ -299,6 +318,7 @@
     "isbnNumber": "978-975-97975-7-7",
     "paperOwner": "Aliağa Belediyesi",
     "place": "Aliağa Belediyesi",
-    "graphicDesign": "Aliağa Belediyesi"
+    "graphicDesign": "Aliağa Belediyesi",
+    "bg": false
   }
 ]

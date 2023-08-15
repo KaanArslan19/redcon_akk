@@ -38,7 +38,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--black-dark);
   margin-top: 0.5rem;
   padding-top: 0.5rem;
 }
@@ -58,6 +58,7 @@
 .icon {
   font-size: 24px;
   margin-right: 0.2rem;
+
   text-align: center;
 }
 .iconLike {
@@ -101,7 +102,7 @@
   line-height: 32px;
 }
 .bottom {
-  margin-top: 4rem;
+  margin-top: 5rem;
   max-width: 312px;
 }
 .bottom h1 {
@@ -206,4 +207,8 @@
   left: 0;
   top: 830px;
   background-color: chartreuse;
+}
+.borderBottom {
+  border-bottom: 1px solid var(--black-dark);
+  padding-bottom: 0.5rem;
 }

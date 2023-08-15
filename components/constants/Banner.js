@@ -1,5 +1,5 @@
 import classes from "./Banner.module.css";
-import ImageSlider from "./ui/ImageSlider";
+import ImageSlider from "../ui/ImageSlider";
 
 import { useMediaQuery } from "react-responsive";
 

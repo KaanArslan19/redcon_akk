@@ -1,6 +1,6 @@
 import classes from "./MessageLayout.module.css";
-import Navbar from "../Navbar";
-import Message from "../Message";
+import Navbar from "../constants/Navbar";
+import Message from "../constants/Message";
 import { useMediaQuery } from "react-responsive";
 
 const MessageLayout = () => {

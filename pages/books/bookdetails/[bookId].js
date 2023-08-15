@@ -14,6 +14,7 @@ const BookDetailsPage = (props) => {
         place={props.bookData.place}
         graphicDesign={props.bookData.graphicDesign}
         isbnNumber={props.bookData.isbnNumber}
+        bg={props.bookData.bg}
       />
     </div>
   );
@@ -57,6 +58,7 @@ export async function getStaticProps({ params }) {
         place: filteredBook.place,
         isbnNumber: filteredBook.isbnNumber,
         graphicDesign: filteredBook.graphicDesign,
+        bg: filteredBook.bg,
       },
     },
   };

@@ -1,11 +1,11 @@
-import Contact from "../Contact";
-import Navbar from "../Navbar";
+import Contact from "../constants/Contact";
+import Navbar from "../constants/Navbar";
 import classes from "./ContactLayout.module.css";
 import { useMediaQuery } from "react-responsive";
 
 const ContactLayout = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width: 768px)",
+    query: "(max-width: 1157px)",
   });
   return (
     <div className={classes.container}>

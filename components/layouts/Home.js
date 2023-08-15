@@ -1,6 +1,6 @@
-import Banner from "../Banner";
+import Banner from "../constants/Banner";
 import classes from "./Home.module.css";
-import Navbar from "../Navbar";
+import Navbar from "../constants/Navbar";
 import { useState } from "react";
 import { Book_List } from "@/lib/constantBookData";
 import { useMediaQuery } from "react-responsive";

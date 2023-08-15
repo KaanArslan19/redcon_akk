@@ -7,9 +7,9 @@
   top: 0;
   z-index: -1;
   border-top: 100vh solid #fff;
-  border-left: 30vw solid var(--secondary-color-dark);
+  border-left: 20vw solid var(--secondary-color-dark);
 
-  width: 58vw;
+  width: 70vw;
   height: 100vh;
 }
 
@@ -20,7 +20,7 @@
   z-index: -1;
   background-color: var(--secondary-color-dark);
 
-  width: 42vw;
+  width: 30vw;
   height: 100vh;
 }
 

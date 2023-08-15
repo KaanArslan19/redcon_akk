@@ -9,7 +9,7 @@ import { useMediaQuery } from "react-responsive";
 
 const Contact = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width: 1157px)",
+    query: "(max-width: 1100px)",
   });
   return (
     <div className={isMobile ? classes.mobileContainer : classes.container}>
@@ -27,7 +27,7 @@ const Contact = () => {
             {!isMobile && <div className={classes.spreaderAddressBottom}></div>}
           </div>
           <div className={classes.sections}>
-            <h5>Email</h5>
+            <h5>Yazar</h5>
             <span>hilalmasa@aliaga.bel.tr | aliagabld@hs1.kep.tr</span>
             {!isMobile && <div className={classes.spreaderEmail}></div>}
           </div>
@@ -38,7 +38,13 @@ const Contact = () => {
           </div>
           <div className={classes.sections}>
             <h5>Sosyal Medya</h5>
-            <span className={classes.socialContent}>
+            <span
+              className={
+                isMobile
+                  ? [classes.socialContent + " " + classes.borderBottom]
+                  : classes.socialContent
+              }
+            >
               <Link href="">
                 <AiOutlineFacebook
                   className={isMobile ? classes.iconMobile : classes.icon}

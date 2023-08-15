@@ -1,5 +1,6 @@
 .container {
   position: relative;
+  min-height: 100vh;
 }
 .top {
   position: absolute;
@@ -8,13 +9,19 @@
   top: 0;
   width: 100vw;
   height: 435px;
+}
+
+.bgPrimaryLight {
   background-color: var(--primary-color-light);
+}
+
+.bgSecondaryLight {
+  background-color: var(--secondary-color-light);
 }
 .bottom {
   position: absolute;
   z-index: -1;
   left: 0;
-  top: 666px;
+  top: 435px;
   width: 100vw;
-  background-color: var(--primary-color-light);
 }

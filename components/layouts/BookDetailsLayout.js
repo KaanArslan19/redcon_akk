@@ -1,5 +1,4 @@
-import React from "react";
-import Navbar from "../Navbar";
+import Navbar from "../constants/Navbar";
 import classes from "./BookDetailsLayout.module.css";
 import BookDetails from "../books/BookDetails";
 
@@ -13,10 +12,17 @@ const BookDetailsLayout = ({
   place,
   graphicDesign,
   isbnNumber,
+  bg,
 }) => {
   return (
     <div className={classes.container}>
-      <div className={classes.top}></div>
+      <div
+        className={
+          bg
+            ? [classes.top + " " + classes.bgPrimaryLight]
+            : [classes.top + " " + classes.bgSecondaryLight]
+        }
+      ></div>
       <div className={classes.bottom}></div>
 
       <Navbar />
@@ -30,6 +36,7 @@ const BookDetailsLayout = ({
         place={place}
         graphicDesign={graphicDesign}
         isbnNumber={isbnNumber}
+        bg={bg}
       />
     </div>
   );

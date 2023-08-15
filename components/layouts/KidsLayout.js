@@ -1,5 +1,5 @@
-import Kids from "../Kids";
-import Navbar from "../Navbar";
+import Kids from "../constants/Kids";
+import Navbar from "../constants/Navbar";
 import classes from "./KidsLayout.module.css";
 import { useMediaQuery } from "react-responsive";
 
