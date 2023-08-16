@@ -9,6 +9,9 @@ const ImageSlider = ({ slides, slideIndex }) => {
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)",
   });
+  const isPad = useMediaQuery({
+    query: "(max-width: 1200px)",
+  });
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -71,7 +74,7 @@ const ImageSlider = ({ slides, slideIndex }) => {
         </div>
       ) : (
         <div className={classes.container}>
-          <div className={classes.top}>
+          <div className={isPad ? classes.topPad : classes.top}>
             <div className={classes.topLeft}>
               <h1>{slides[currentIndex].title}</h1>
               <span>{slides[currentIndex].description}</span>
@@ -87,8 +90,8 @@ const ImageSlider = ({ slides, slideIndex }) => {
             <div className={classes.topRight}>
               <Image
                 src={slides[currentIndex].image}
-                width={800}
-                height={734}
+                width={isPad ? 560 : 800}
+                height={isPad ? 514 : 734}
                 alt={slides[currentIndex].title}
                 className={classes.image}
               />

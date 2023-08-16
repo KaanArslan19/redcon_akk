@@ -79,8 +79,14 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
-  background-color: var(--primary-color-dark);
   padding: 1.5rem;
+}
+.bgPrimaryDark {
+  background-color: var(--primary-color-dark);
+}
+
+.bgSecondaryDark {
+  background-color: var(--secondary-color-dark);
 }
 .logo {
   cursor: pointer;

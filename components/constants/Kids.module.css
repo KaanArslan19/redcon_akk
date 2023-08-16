@@ -42,6 +42,7 @@
 }
 .sizeAdj {
   max-width: 621px;
+  height: 90vh;
 }
 
 .content p {

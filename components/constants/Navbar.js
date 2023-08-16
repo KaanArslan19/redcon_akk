@@ -7,7 +7,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { BiMenu } from "react-icons/bi";
 import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = ({ bg }) => {
   const [toggle, setToggle] = useState(false);
   const router = useRouter();
   const currentRoute = router.pathname;
@@ -21,7 +21,7 @@ const Navbar = () => {
   ];
 
   const isMobile = useMediaQuery({
-    query: "(max-width: 862px)",
+    query: "(max-width: 930px)",
   });
   const logoClickHandler = () => {
     router.push("/");
@@ -47,7 +47,13 @@ const Navbar = () => {
             />
           ) : (
             <div className={classes.mobileNav}>
-              <div className={classes.mobileNavTop}>
+              <div
+                className={
+                  bg
+                    ? [classes.mobileNavTop + " " + classes.bgPrimaryDark]
+                    : [classes.mobileNavTop + " " + classes.bgSecondaryDark]
+                }
+              >
                 <Image
                   src="/images/logos/akk_logo.png"
                   width={65}

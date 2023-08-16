@@ -85,7 +85,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 
   padding: 1rem;
 }
@@ -114,6 +114,36 @@
 
   padding: 1rem 1.5rem 1rem;
 }
-.emptyMobile {
+.mobileLeftSide {
   height: 40vh;
+}
+.leftSide {
+  display: flex;
+  height: 85vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftSide span {
+  color: #fff;
+  font-family: "Roxborough-CF", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  margin-bottom: 2.5rem;
+  margin-left: 4rem;
+}
+.mobileLeftSide {
+  display: flex;
+  align-items: flex-end;
+}
+.mobileLeftSide span {
+  color: #fff;
+  font-family: "Roxborough-CF", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  margin-bottom: 2.5rem;
+  margin-left: 1.5rem;
 }

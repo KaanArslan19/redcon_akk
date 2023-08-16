@@ -1,22 +1,13 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment } from "react";
 import classes from "./BookList.module.css";
 import BookItem from "./BookItem";
 
-const BookList = ({ books }) => {
-  const [bookList, setBookList] = useState(books);
-  console.log(bookList);
-  useEffect(() => {
-    const updatedBookList = bookList.map((book, index) => ({
-      ...book,
-      bg: index % 2 === 0 ? book.bg : true,
-    }));
-    setBookList(updatedBookList);
-  }, [books]);
+const BookList = (props) => {
   return (
     <Fragment>
       <div className={classes.listContainer}>
         <ul id="item-list" className={classes.list}>
-          {bookList.map((product) => (
+          {props.bookList.map((product) => (
             <BookItem
               key={product.id}
               id={product.id}

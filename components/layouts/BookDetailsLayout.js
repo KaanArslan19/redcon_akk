@@ -25,7 +25,7 @@ const BookDetailsLayout = ({
       ></div>
       <div className={classes.bottom}></div>
 
-      <Navbar />
+      <Navbar bg={bg} />
       <BookDetails
         summary={summary}
         writer={writer}

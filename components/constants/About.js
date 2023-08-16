@@ -7,7 +7,10 @@ const About = () => {
   });
   return (
     <div className={!isMobile ? classes.container : classes.mobileContainer}>
-      <div className={isMobile ? classes.emptyMobile : ""}></div>
+      <div className={isMobile ? classes.mobileLeftSide : classes.leftSide}>
+        <div></div>
+        <span>Bilginin Işığında</span>
+      </div>
       <div className={isMobile ? classes.mobileContent : classes.content}>
         <div
           className={

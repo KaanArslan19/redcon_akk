@@ -3,11 +3,11 @@ import Navbar from "../constants/Navbar";
 import BookList from "../books/BookList";
 import classes from "./Books.module.css";
 import { Book_List } from "@/lib/constantBookData";
-const Books = () => {
+const Books = (props) => {
   return (
     <div className={classes.container}>
       <Navbar />
-      <BookList books={Book_List} />
+      <BookList bookList={props.bookList} />
       <Footer />
     </div>
   );

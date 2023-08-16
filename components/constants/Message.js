@@ -3,15 +3,17 @@ import classes from "./Message.module.css";
 import { useMediaQuery } from "react-responsive";
 
 const Message = () => {
-  const isMobile = useMediaQuery({
-    query: "(max-width: 768px)",
-  });
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTab = useMediaQuery({
     query: "(max-width: 1440px)",
   });
+  const isLowHeight = useMediaQuery({ query: "(max-height: 768px)" });
+
   return (
     <div className={classes.container}>
-      <div className={isMobile ? classes.topMobile : classes.top}>
+      <div
+        className={isMobile || isLowHeight ? classes.topMobile : classes.top}
+      >
         <h1>Tarih, Bir Milletin Geçmişi ile Geleceği Arasındaki Köprüdür</h1>
         <p>
           Kentleri kent yapan, geçmişten bugüne taşıdığı değerlerle oluşan
@@ -46,7 +48,9 @@ const Message = () => {
       </div>
       <div
         className={
-          isMobile ? classes.motifContainerMobile : classes.motifContainer
+          isMobile || isLowHeight
+            ? classes.motifContainerMobile
+            : classes.motifContainer
         }
       >
         <div className={isTab ? classes.motifTab : classes.motif}></div>

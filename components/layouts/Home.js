@@ -17,6 +17,7 @@ const Home = () => {
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)",
   });
+
   return (
     <div className={isMobile ? classes.mobileContainer : classes.container}>
       {isMobile ? (
