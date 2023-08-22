@@ -2,10 +2,9 @@ import Banner from "../constants/Banner";
 import classes from "./Home.module.css";
 import Navbar from "../constants/Navbar";
 import { useState } from "react";
-import { Book_List } from "@/lib/constantBookData";
 import { useMediaQuery } from "react-responsive";
 
-const Home = () => {
+const Home = (props) => {
   const [backgroundColor, setBackgroundColor] = useState(false);
   const backgroundChangeHandler = (currentIndex) => {
     if (currentIndex % 2 === 0) {
@@ -56,8 +55,8 @@ const Home = () => {
         </>
       )}
 
-      <Navbar />
-      <Banner index={backgroundChangeHandler} slides={Book_List} />
+      <Navbar bg={props.bookList.bg} />
+      <Banner index={backgroundChangeHandler} slides={props.bookList} />
     </div>
   );
 };

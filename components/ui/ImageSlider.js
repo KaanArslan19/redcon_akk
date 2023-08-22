@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classes from "./ImageSlider.module.css";
 import Image from "next/image";
 import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
@@ -6,12 +6,56 @@ import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 
 const ImageSlider = ({ slides, slideIndex }) => {
+  useEffect(() => {
+    const resizeImage = () => {
+      const container = document.querySelector(`${classes.topRight}`);
+      const image = document.querySelector(`${classes.topRight} img`);
+
+      if (container && image) {
+        const containerWidth = container.offsetWidth;
+        const imageWidth = image.naturalWidth;
+        const scaleFactor = containerWidth / imageWidth;
+
+        image.style.transform = `scale(${scaleFactor})`;
+      }
+    };
+
+    resizeImage();
+    window.addEventListener("resize", resizeImage);
+
+    return () => {
+      window.removeEventListener("resize", resizeImage);
+    };
+  }, []);
+
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)",
   });
   const isPad = useMediaQuery({
     query: "(max-width: 1200px)",
   });
+  const isXLScreen = useMediaQuery({
+    query: "(min-width: 1940px)",
+  });
+
+  /*   const imgSizeAdjustmentWidth = () => {
+    if (isPad) {
+      return 560;
+    } else if (isXLScreen) {
+      return 1600;
+    } else {
+      return 800;
+    }
+  };
+  const imgSizeAdjustmentHeight = () => {
+    if (isPad) {
+      return 514;
+    } else if (isXLScreen) {
+      return 1468;
+    } else {
+      return 734;
+    }
+  }; */
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -90,10 +134,10 @@ const ImageSlider = ({ slides, slideIndex }) => {
             <div className={classes.topRight}>
               <Image
                 src={slides[currentIndex].image}
-                width={isPad ? 560 : 800}
-                height={isPad ? 514 : 734}
+                fill={true}
+                objectFit="cover"
+                className={classes.responsiveBannerImg}
                 alt={slides[currentIndex].title}
-                className={classes.image}
               />
             </div>
           </div>

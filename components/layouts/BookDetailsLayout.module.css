@@ -1,14 +1,19 @@
 .container {
   position: relative;
-  min-height: 100vh;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
 }
 .top {
-  position: absolute;
-  z-index: -1;
-  left: 0;
   top: 0;
-  width: 100vw;
-  height: 435px;
 }
 
 .bgPrimaryLight {
@@ -18,10 +23,14 @@
 .bgSecondaryLight {
   background-color: var(--secondary-color-light);
 }
+
+.bgPrimaryDark {
+  background-color: var(--primary-color-dark);
+}
+
+.bgSecondaryDark {
+  background-color: var(--secondary-color-dark);
+}
 .bottom {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 435px;
-  width: 100vw;
+  bottom: 0;
 }

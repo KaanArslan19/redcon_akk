@@ -10,10 +10,10 @@ const KidsLayout = () => {
   return (
     <div className={isMobile ? "" : classes.container}>
       {isMobile ? (
-        <>
+        <div className={classes.contentContainer}>
           <div className={classes.topHalf}></div>
           <div className={classes.bottomHalf}></div>
-        </>
+        </div>
       ) : (
         <>
           <div className={classes.rightHalf}></div>

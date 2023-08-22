@@ -16,7 +16,6 @@ const Banner = ({ index, slides }) => {
       <div className={classes.top}>
         <ImageSlider slideIndex={indexChangeHandler} slides={slides} />
       </div>
-      <div className={classes.bottom}></div>
     </div>
   );
 };

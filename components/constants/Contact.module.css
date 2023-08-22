@@ -81,13 +81,13 @@
   line-height: 40px;
 }
 .right {
-  width: 526px;
+  max-width: 526px;
 }
 .right h1 {
   margin-bottom: 1rem;
 }
 .left {
-  width: 622px;
+  max-width: 622px;
 
   margin-right: 4rem;
 }

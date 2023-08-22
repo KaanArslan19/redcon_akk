@@ -6,6 +6,7 @@ import { TiAttachment } from "react-icons/ti";
 import { useMediaQuery } from "react-responsive";
 import { BiChevronDown } from "react-icons/bi";
 import { useState } from "react";
+import { createKey } from "next/dist/shared/lib/router/router";
 
 const BookDetails = ({
   summary,
@@ -45,9 +46,11 @@ const BookDetails = ({
               Sesli Kitap İndir <GoPlay className={classes.icon} />
             </Link>
             <div className={classes.slider}></div>
-            <Link href="" className={classes.button}>
-              Pdf İndir
-            </Link>
+            <div className={classes.buttonContainer}>
+              <Link href="" className={classes.button}>
+                Pdf İndir
+              </Link>
+            </div>
           </div>
           <div className={classes.bottomContainer}>
             <div className={classes.bottom}>

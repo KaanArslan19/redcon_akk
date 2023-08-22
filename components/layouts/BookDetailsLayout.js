@@ -19,11 +19,41 @@ const BookDetailsLayout = ({
       <div
         className={
           bg
-            ? [classes.top + " " + classes.bgPrimaryLight]
-            : [classes.top + " " + classes.bgSecondaryLight]
+            ? [
+                classes.background +
+                  " " +
+                  classes.top +
+                  " " +
+                  classes.bgPrimaryLight,
+              ]
+            : [
+                classes.background +
+                  " " +
+                  classes.top +
+                  " " +
+                  classes.bgSecondaryLight,
+              ]
         }
       ></div>
-      <div className={classes.bottom}></div>
+      <div
+        className={
+          bg
+            ? [
+                classes.background +
+                  " " +
+                  classes.bottom +
+                  " " +
+                  classes.bgPrimaryDark,
+              ]
+            : [
+                classes.background +
+                  " " +
+                  classes.bottom +
+                  " " +
+                  classes.bgSecondaryDark,
+              ]
+        }
+      ></div>
 
       <Navbar bg={bg} />
       <BookDetails

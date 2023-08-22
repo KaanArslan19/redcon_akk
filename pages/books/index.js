@@ -2,7 +2,6 @@ import Books from "@/components/layouts/Books";
 import fs from "fs/promises";
 
 const BooksPage = (props) => {
-  console.log(props.bookList);
   return <Books bookList={props.bookList.data} />;
 };
 
