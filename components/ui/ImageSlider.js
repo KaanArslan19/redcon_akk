@@ -38,24 +38,6 @@ const ImageSlider = ({ slides, slideIndex }) => {
     query: "(min-width: 1940px)",
   });
 
-  /*   const imgSizeAdjustmentWidth = () => {
-    if (isPad) {
-      return 560;
-    } else if (isXLScreen) {
-      return 1600;
-    } else {
-      return 800;
-    }
-  };
-  const imgSizeAdjustmentHeight = () => {
-    if (isPad) {
-      return 514;
-    } else if (isXLScreen) {
-      return 1468;
-    } else {
-      return 734;
-    }
-  }; */
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -70,7 +52,7 @@ const ImageSlider = ({ slides, slideIndex }) => {
     slideIndex(currentIndex);
   };
   return (
-    <>
+    <div className={classes.topContainer}>
       {isMobile ? (
         <div className={classes.mobileContainer}>
           <div className={classes.mobileTop}>
@@ -162,7 +144,7 @@ const ImageSlider = ({ slides, slideIndex }) => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

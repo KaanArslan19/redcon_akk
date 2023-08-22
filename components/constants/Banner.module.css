@@ -5,4 +5,5 @@
 }
 .mobileContainer {
   color: var(--black-dark);
+  height: 80vh;
 }
