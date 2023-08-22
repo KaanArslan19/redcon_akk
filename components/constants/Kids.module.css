@@ -68,7 +68,8 @@
 .bottom {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 .bottomRight {
   display: flex;

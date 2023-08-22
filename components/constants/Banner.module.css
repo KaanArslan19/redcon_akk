@@ -1,7 +1,7 @@
 .container {
   color: var(--black-dark);
   margin: 0 2rem 2rem 4rem;
-  height: 80%;
+  height: 80vh;
 }
 .mobileContainer {
   color: var(--black-dark);

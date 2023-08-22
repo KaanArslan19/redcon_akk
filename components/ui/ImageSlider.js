@@ -118,8 +118,8 @@ const ImageSlider = ({ slides, slideIndex }) => {
         </div>
       ) : (
         <div className={classes.container}>
-          <div className={isPad ? classes.topPad : classes.top}>
-            <div className={classes.topLeft}>
+          <div className={classes.top}>
+            <div>
               <h1>{slides[currentIndex].title}</h1>
               <span>{slides[currentIndex].description}</span>
               <Link
@@ -135,7 +135,7 @@ const ImageSlider = ({ slides, slideIndex }) => {
               <Image
                 src={slides[currentIndex].image}
                 fill={true}
-                objectFit="cover"
+                style={{ objectFit: "contain" }}
                 className={classes.responsiveBannerImg}
                 alt={slides[currentIndex].title}
               />
