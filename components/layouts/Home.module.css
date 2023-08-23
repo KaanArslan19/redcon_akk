@@ -1,14 +1,12 @@
 .container {
   background-color: transparent;
   height: 100vh;
-  height: 100svh;
   width: 100%;
   overflow: hidden;
 }
 .mobileContainer {
   background-color: transparent;
   width: 100%;
-
   height: 100vh;
   height: 100svh;
   overflow: hidden;
@@ -72,12 +70,12 @@
 }
 
 .primaryBgLightMobile {
-  border-right: 100vh solid var(--primary-color-light);
+  border-right: 100svh solid var(--primary-color-light);
   border-bottom: 35vw solid var(--primary-color-dark);
 }
 
 .secondaryBgLightMobile {
-  border-right: 100vh solid var(--secondary-color-light);
+  border-right: 100svh solid var(--secondary-color-light);
   border-bottom: 35vw solid var(--secondary-color-dark);
 }
 

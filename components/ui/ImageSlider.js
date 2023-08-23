@@ -6,28 +6,6 @@ import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 
 const ImageSlider = ({ slides, slideIndex }) => {
-  useEffect(() => {
-    const resizeImage = () => {
-      const container = document.querySelector(`${classes.topRight}`);
-      const image = document.querySelector(`${classes.topRight} img`);
-
-      if (container && image) {
-        const containerWidth = container.offsetWidth;
-        const imageWidth = image.naturalWidth;
-        const scaleFactor = containerWidth / imageWidth;
-
-        image.style.transform = `scale(${scaleFactor})`;
-      }
-    };
-
-    resizeImage();
-    window.addEventListener("resize", resizeImage);
-
-    return () => {
-      window.removeEventListener("resize", resizeImage);
-    };
-  }, []);
-
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)",
   });
@@ -58,9 +36,10 @@ const ImageSlider = ({ slides, slideIndex }) => {
           <div className={classes.mobileTop}>
             <Image
               src={slides[currentIndex].image}
-              width={360}
-              height={330}
+              fill={true}
+              style={{ objectFit: "contain" }}
               alt={slides[currentIndex].title}
+              className={classes.responsiveBannerImg}
             />
           </div>
           <div className={classes.mobileBottom}>
