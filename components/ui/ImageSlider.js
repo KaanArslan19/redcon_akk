@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import classes from "./ImageSlider.module.css";
 import Image from "next/image";
 import { BiChevronRight, BiChevronLeft } from "react-icons/bi";

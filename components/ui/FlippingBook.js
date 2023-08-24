@@ -1,4 +1,4 @@
-/* import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import pdfjs from "pdfjs-dist"; // Import pdfjs-dist with webpack
 import "pdfjs-dist/web/pdf_viewer.css"; // Import the viewer stylesheet
 
@@ -52,4 +52,4 @@ const FlippingBook = ({ pdfFile }) => {
   );
 };
 
-export default FlippingBook; */
+export default FlippingBook;
