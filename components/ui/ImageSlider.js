@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
+import { useState } from "react";
 
 const ImageSlider = ({ slides, slideIndex }) => {
   const isMobile = useMediaQuery({
