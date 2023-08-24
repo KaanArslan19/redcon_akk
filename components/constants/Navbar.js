@@ -1,6 +1,6 @@
 import Image from "next/image";
 import classes from "./Navbar.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 import { AiOutlineClose } from "react-icons/ai";
@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 
 const Navbar = ({ bg }) => {
   const [toggle, setToggle] = useState(false);
+  const [customMenuClasses, setCustomMenuClasses] = useState(false);
   const router = useRouter();
   const currentRoute = router.pathname;
   const Navbar_Items = [
@@ -26,6 +27,15 @@ const Navbar = ({ bg }) => {
   const logoClickHandler = () => {
     router.push("/");
   };
+  useEffect(() => {
+    if (bg === "primaryBg") {
+      setCustomMenuClasses(true);
+    }
+    if (bg === "secondaryBg") {
+      setCustomMenuClasses(false);
+    }
+  }, [bg]);
+
   return (
     <div className={isMobile ? classes.mobileContainer : classes.container}>
       <Image
@@ -49,7 +59,7 @@ const Navbar = ({ bg }) => {
             <div className={classes.mobileNav}>
               <div
                 className={
-                  bg
+                  customMenuClasses
                     ? [classes.mobileNavTop + " " + classes.bgPrimaryDark]
                     : [classes.mobileNavTop + " " + classes.bgSecondaryDark]
                 }

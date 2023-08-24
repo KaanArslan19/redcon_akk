@@ -5,10 +5,10 @@ import { useMediaQuery } from "react-responsive";
 
 const ContactLayout = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width: 1157px)",
+    query: "(max-width: 768px)",
   });
   return (
-    <div className={classes.container}>
+    <div className={isMobile ? classes.mobileContainer : classes.container}>
       {isMobile ? (
         <>
           <div className={classes.topHalf}></div>

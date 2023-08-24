@@ -9,12 +9,6 @@ const ImageSlider = ({ slides, slideIndex }) => {
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)",
   });
-  const isPad = useMediaQuery({
-    query: "(max-width: 1200px)",
-  });
-  const isXLScreen = useMediaQuery({
-    query: "(min-width: 1940px)",
-  });
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {

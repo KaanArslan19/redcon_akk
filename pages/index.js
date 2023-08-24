@@ -1,6 +1,7 @@
 import Home from "@/components/layouts/Home";
 import Head from "next/head";
 import fs from "fs/promises";
+import FlippingBook from "../components/ui/FlippingBook";
 
 export default function HomePage(props) {
   return (

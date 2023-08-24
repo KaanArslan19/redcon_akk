@@ -1,5 +1,7 @@
 .container {
-  width: 100vw;
+  width: 100%;
+}
+.mobileContainer {
 }
 .rightHalf {
   position: absolute;

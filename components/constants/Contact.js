@@ -6,10 +6,11 @@ import {
   AiOutlineLike,
 } from "react-icons/ai";
 import { useMediaQuery } from "react-responsive";
+import Map from "../ui/Map/index";
 
 const Contact = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width: 1100px)",
+    query: "(max-width: 768px)",
   });
   return (
     <div className={isMobile ? classes.mobileContainer : classes.container}>
@@ -81,7 +82,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className={isMobile ? classes.mapMobile : classes.map}></div>
+
+      <Map />
     </div>
   );
 };

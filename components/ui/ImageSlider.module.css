@@ -114,8 +114,8 @@
 
 .mobileBottom {
   padding: 0 1.5rem 0;
+  margin-top: calc(10rem - 15vh);
   display: flex;
-
   flex-direction: column;
   justify-content: space-between;
 }
@@ -172,30 +172,6 @@
   margin-bottom: 1rem;
 }
 
-.topPad {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.topPad h1 {
-  font-family: "Aftika-SemiBold", sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-}
-
-.topPad span {
-  font-family: "Aftika-Light", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  text-transform: uppercase;
-}
 .topRight {
   display: flex;
   height: 80vh;

@@ -55,7 +55,7 @@ const Home = (props) => {
         </>
       )}
 
-      <Navbar bg={props.bookList.bg} />
+      <Navbar bg={backgroundColor ? "primaryBg" : "secondaryBg"} />
       <Banner index={backgroundChangeHandler} slides={props.bookList} />
     </div>
   );

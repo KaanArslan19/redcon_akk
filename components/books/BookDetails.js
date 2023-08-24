@@ -4,9 +4,8 @@ import MobileBookDetails from "../mobileConstants/MobileBookDetails";
 import { GoPlay } from "react-icons/go";
 import { TiAttachment } from "react-icons/ti";
 import { useMediaQuery } from "react-responsive";
-import { BiChevronDown } from "react-icons/bi";
-import { useState } from "react";
-import { createKey } from "next/dist/shared/lib/router/router";
+
+import FlippingBook from "../ui/FlippingBook";
 
 const BookDetails = ({
   summary,
@@ -45,7 +44,7 @@ const BookDetails = ({
             <Link href="" className={classes.button}>
               Sesli Kitap İndir <GoPlay className={classes.icon} />
             </Link>
-            <div className={classes.slider}></div>
+            <FlippingBook pdfFile="../../lib/BooksPdf/1-Aliaganın_Antik_Kentleri.pdf" />
             <div className={classes.buttonContainer}>
               <Link href="" className={classes.button}>
                 Pdf İndir

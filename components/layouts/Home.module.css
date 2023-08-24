@@ -5,11 +5,8 @@
   overflow: hidden;
 }
 .mobileContainer {
-  background-color: transparent;
   width: 100%;
-  height: 100vh;
-  height: 100svh;
-  overflow: hidden;
+  height: 100%;
 }
 .rightHalf {
   position: absolute;
@@ -56,17 +53,17 @@
   top: 0;
   z-index: -1;
   width: 100vw;
-  height: 70svh;
+  height: 575px;
 }
 
 .bottomHalf {
   position: absolute;
   left: 0;
   bottom: 0;
+  top: 575px;
   z-index: -1;
-
+  min-height: 200px;
   width: 100vw;
-  height: 30svh;
 }
 
 .primaryBgLightMobile {
