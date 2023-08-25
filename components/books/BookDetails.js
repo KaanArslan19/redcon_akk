@@ -5,8 +5,6 @@ import { GoPlay } from "react-icons/go";
 import { TiAttachment } from "react-icons/ti";
 import { useMediaQuery } from "react-responsive";
 
-import FlippingBook from "../ui/FlippingBook";
-
 const BookDetails = ({
   summary,
   writer,
@@ -44,7 +42,7 @@ const BookDetails = ({
             <Link href="" className={classes.button}>
               Sesli Kitap İndir <GoPlay className={classes.icon} />
             </Link>
-            <FlippingBook pdfFile="../../lib/BooksPdf/1-Aliaganın_Antik_Kentleri.pdf" />
+
             <div className={classes.buttonContainer}>
               <Link href="" className={classes.button}>
                 Pdf İndir
