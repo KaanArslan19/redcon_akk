@@ -82,7 +82,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
       <Map />
     </div>
   );

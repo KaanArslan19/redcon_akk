@@ -13,7 +13,7 @@
   width: 100vw;
 }
 .content {
-  max-width: 621px;
+  max-width: 40vw;
   display: flex;
   height: 85vh;
   flex-direction: column;

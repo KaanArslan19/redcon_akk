@@ -39,17 +39,19 @@ const BookDetails = ({
       ) : (
         <div className={classes.container}>
           <div className={classes.top}>
-            <Link href="" className={classes.button}>
-              Sesli Kitap İndir <GoPlay className={classes.icon} />
-            </Link>
+            <button className={classes.button}>
+              Sesli Kitap İndİr <GoPlay className={classes.icon} />
+            </button>
 
-            <div className={classes.buttonContainer}>
-              <Link href="" className={classes.button}>
-                Pdf İndir
-              </Link>
-            </div>
+            <button className={classes.button}>Pdf İndİr</button>
           </div>
-          <div className={classes.bottomContainer}>
+          <div
+            className={
+              bg
+                ? classes.bottomContainer + " " + classes.bgPrimaryDark
+                : classes.bottomContainer + " " + classes.bgSecondaryDark
+            }
+          >
             <div className={classes.bottom}>
               <div>
                 <h1>Özet</h1>

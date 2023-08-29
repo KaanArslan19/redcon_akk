@@ -7,6 +7,9 @@ const Message = () => {
   const isTab = useMediaQuery({
     query: "(max-width: 1440px)",
   });
+  const is3XLScreen = useMediaQuery({
+    query: "(max-width: 1940px)",
+  });
   const isLowHeight = useMediaQuery({ query: "(max-height: 768px)" });
 
   return (

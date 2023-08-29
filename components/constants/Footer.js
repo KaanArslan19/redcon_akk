@@ -29,8 +29,8 @@ const Footer = () => {
 
       <Image
         src="/images/logo.png"
-        width={isMobile ? 41 : 150}
-        height={isMobile ? 40 : 120}
+        width={isMobile ? 41 : 82}
+        height={isMobile ? 40 : 80}
         alt="footerLogo"
       />
       <div className={classes.right}>

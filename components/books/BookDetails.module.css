@@ -73,6 +73,8 @@
 }
 .button {
   border: 1px solid var(--black-dark);
+  background-color: transparent;
+  color: var(--black-dark);
   padding: 0.3rem 0.8rem 0.3rem;
   display: flex;
   height: 35px;
@@ -123,6 +125,10 @@
   width: 100%;
   display: flex;
 }
-.buttonContainer {
-  height: 100%;
+
+.bgSecondaryDark {
+  background-color: var(--secondary-color-dark);
+}
+.bgPrimaryDark {
+  background-color: var(--primary-color-dark);
 }
